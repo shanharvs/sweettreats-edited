@@ -106,6 +106,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <header class="navigation fixed-top nav-bg">
   <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <a class="navbar-brand" href="homepage.php">
+        <img src="pics/logosample.png" alt="Logo" style="height: 60px;">
+      </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
