@@ -54,6 +54,12 @@ if (!isset($_SESSION['user_data'])) {
       padding: 100px 0 50px; /* reduced from 250px/150px */
     }
 
+      .profile-card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+
   </style>
 </head>
 
@@ -103,29 +109,55 @@ if (!isset($_SESSION['user_data'])) {
   <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
 </section>
 
+<section class="page-title bg-light position-relative content py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="bg-white rounded-4 shadow p-5 border text-dark">
+          <h3 class="mb-4 fw-bold text-center">Personal Information</h3>
+          <hr class="mb-4">
 
-<section class="page-title bg-primary position-relative content">
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8 col-lg-6">
-      <div class="bg-white rounded text-center p-4 shadow-down">
-        <h4 class="mb-4">Personal Information</h4>
-        <div class="message-control px-0 mb-4"><b>Name:</b> <?php echo $fullname; ?></div>
-        <div class="message-control px-0 mb-4"><b>Gender:</b> <?php echo $gender; ?></div>
-        <div class="message-control px-0 mb-4"><b>Date of Birth:</b> <?php echo $dob; ?></div>
-        <div class="message-control px-0 mb-4"><b>Phone:</b> <?php echo $phone; ?></div>
-        <div class="message-control px-0 mb-4"><b>Email:</b> <?php echo $email; ?></div>
-        <div class="message-control px-0 mb-4"><b>Street:</b> <?php echo $street; ?></div>
-        <div class="message-control px-0 mb-4"><b>City:</b> <?php echo $city; ?></div>
-        <div class="message-control px-0 mb-4"><b>Province:</b> <?php echo $province; ?></div>
-        <div class="message-control px-0 mb-4"><b>ZIP:</b> <?php echo $zip; ?></div>
-        <div class="message-control px-0 mb-4"><b>Country:</b> <?php echo $country; ?></div>
-        <div class="message-control px-0 mb-4"><b>Username:</b> <?php echo $username; ?></div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Name:</span> <span class="text-dark fs-3"><?php echo $fullname; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Gender:</span> <span class="text-dark fs-3"><?php echo $gender; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Date of Birth:</span> <span class="text-dark fs-3"><?php echo $dob; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Phone:</span> <span class="text-dark fs-3"><?php echo $phone; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Email:</span> <span class="text-dark fs-3"><?php echo $email; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Street:</span> <span class="text-dark fs-3"><?php echo $street; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">City:</span> <span class="text-dark fs-3"><?php echo $city; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">Province:</span> <span class="text-dark fs-3"><?php echo $province; ?></span>
+          </div>
+          <div class="p-3 mb-3 border rounded bg-light">
+            <span class="fw-semibold">ZIP:</span> <span class="text-dark fs-3"><?php echo $zip; ?></span>
+          </div>
+          <div class="p-3 border rounded bg-light">
+            <span class="fw-semibold">Country:</span> <span class="text-dark fs-3"><?php echo $country; ?></span>
+          </div>
+          <div class="p-3 mt-3 border rounded bg-light">
+            <span class="fw-semibold">Username:</span> <span class="text-dark fs-3"><?php echo $username; ?></span>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
+
+
 
 
     <!-- footer -->
