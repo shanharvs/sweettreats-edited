@@ -23,7 +23,8 @@ session_start();
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      padding-top: 60px;
+      padding-top: 100px;
+      padding-bottom: 80px;
     }
     .content {
       flex: 1;
@@ -32,9 +33,15 @@ session_start();
 </head>
 
 <body>
-<div class="wrapper">
-  <header class="navigation fixed-top nav-bg">
+
+ <header class="navigation fixed-top nav-bg">
     <nav class="navbar navbar-expand-lg navbar-dark">
+      
+      <!-- LOGO -->
+      <a class="navbar-brand" href="about.php">
+        <img src="pics/logosample.png" alt="Logo" style="height: 60px;">
+      </a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,17 +49,29 @@ session_start();
 
       <div class="collapse navbar-collapse text-center" id="navigation">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="homepage.php">Account</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-          <li class="nav-item active"><a class="nav-link" href="products.php">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>
-          <li class="nav-item"><a class="nav-link" href="logout.php">Log-out</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.php">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.php">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="products.php">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.php">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.php">Log-out</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <div class="container mt-4">
+
+
+  <div class="container mt-5 pt-4">
     <div class="row justify-content-end mb-3">
       <div class="col-auto">
         <div class="d-flex align-items-center gap-2">
