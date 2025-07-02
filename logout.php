@@ -33,6 +33,11 @@ exit;
   
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <a class="navbar-brand" href="homepage.php">
+        <img src="pics/logosample.png" alt="Logo" style="height: 60px;">
+      </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
