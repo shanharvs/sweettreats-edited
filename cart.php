@@ -63,7 +63,7 @@ $total = 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 60px; /* your navbar offset */
+    padding-top: 80px; /* your navbar offset */
   }
 
   .container.mt-5.pt-5 {
@@ -73,35 +73,41 @@ $total = 0;
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="navigation fixed-top nav-bg">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+ <header class="navigation fixed-top nav-bg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      
+      <!-- LOGO -->
+      <a class="navbar-brand" href="about.php">
+        <img src="pics/logosample.png" alt="Logo" style="height: 60px;">
+      </a>
 
-        <div class="collapse navbar-collapse text-center" id="navigation">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="homepage.php">Account</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="products.php">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cart.php">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="logout.php">Log-out</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.php">Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.php">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="products.php">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.php">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.php">Log-out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
 
     <div class="container mt-5 pt-5">
       <h2 class="mb-4">Your Shopping Cart</h2>
@@ -144,6 +150,12 @@ $total = 0;
         <p>Your cart is empty.</p>
       <?php endif; ?>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Footer -->
 <footer class="bg-dark footer-section">
